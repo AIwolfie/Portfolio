@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+    <link rel="icon" href="terminal.png" type="image/png">
+    <title>AIwolfie's Terminal</title>
+    <style>
+        #element {
+            font-size: 20px; /* Adjust the size to your preference */
+            font-weight: bold; /* Optional: Make it bold if needed */
+        }
+    </style>
+</head>
+
+<body onload="loadfun()">
+    <div id="loading"> <img src="https://i.imgur.com/FEDTpyE.gif" alt="Loading"></div>
+    <div class="button-container">
+        <button class="app" id="app" onclick="AppOpen()">
+            <img src="terminal.png" alt="Terminal" id="AppIcon">
+            <span class="term">Terminal</span>
+        </button>
+        <button class="app2" id="app2" onclick="AppOpenResumeTab()">
+            <img src="resume.png" alt="MyResume" id="AppIcon2">
+            <span class="resu">My Resume</span>
+        </button>
+        <button class="app3" id="app3" onclick="OpenStandardPortfolio()">
+            <img src="profile.png" alt="StandardPortfolio" id="AppIcon">
+            <span class="port">Standard<br>Portfolio</span>
+        </button>
+    </div>
+
+
+    <div id="Terminal" class="Terminal">
+        <br>
+        Hi, I am <span class="name">AIwolfie&nbsp;</span><span class="name" id="element",style="font-size:15px"></span><br><br>
+        <br>
+        I am a <span class="game">CyberSecurity</span> Enthusiast and <span class="backend">Bug Bounty Hunter</span> ^_^<br>
+        Found <strong>8 valid bugs</strong> in various programs - Working on <a class="ddc" href="#">WolfCrawl</a> -  
+        Exploring <span class="learning">Malware Development</span> and Web3 Security, Author of <a class="mlh" href="https://aiwolfie.medium.com/">Web Security Articles</a> on Medium.      
+        <p id="Content" class="Content">
+            <br>Type help for a list of commands.<br>
+        </p><br><span class='meh'>$ </span>
+        <form><input class="command" /></form><br>
+
+        <div class="Buttons" id="Buttons">
+            <button class="x titlebutton" onclick=closeT()></button>
+            <button class="Under titlebutton" onclick="Hide()"></button>
+            <button class="Maximize titlebutton" onclick="Maxim()"></button>
+            <span class="titlebar">Portfolio</span>
+        </div>
+    </div>
+
+
+
+    <div id="ResumeTab" class="ResumeTab">
+        <div class="image-container">
+            <img src="resumePage.jpg" alt="Image" class="resumePage"/>
+        </div>
+        <div class="Buttons ButtonsResumeTab" id="Buttons">
+            <button class="x titlebutton" onclick=closeResumeTab()></button>
+            <button class="Under titlebutton UnderR" onclick="HideResumeTab()"></button>
+            <span class="titlebarResumeTab">Resume.pdf</span>
+        </div>
+    </div>
+
+
+
+
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <script>
+        var typed = new Typed('#element', {
+            strings: ['(Mayank Malaviya)^3000', '^3000'],
+            typeSpeed: 40,
+            smartBackspace: true, // Default value
+            loop: true,
+        });
+    </script>
+    <script>on_load()</script>
+    <script>
+        var load = document.getElementById("loading");
+        function loadfun() {
+            load.style.display = 'none';
+        }
+    </script>
+
+</body>
+
+</html>
